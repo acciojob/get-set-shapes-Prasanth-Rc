@@ -1,6 +1,6 @@
 //complete this code
 class Rectangle {
-constructor(width, height) {
+  constructor(width, height) {
     if (width <= 0 || height <= 0) {
       throw new Error("Width and height must be positive integers.");
     }
@@ -21,8 +21,8 @@ constructor(width, height) {
   }
 }
 
-class Square extends Animal {
-constructor(side) {
+class Square extends Rectangle {
+  constructor(side) {
     if (side <= 0) {
       throw new Error("Side must be a positive integer.");
     }
